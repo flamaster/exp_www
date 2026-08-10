@@ -7,16 +7,9 @@
     <!-- Dołączenie Ruffle z CDN -->
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
-<body bgcolor="#333333" onload='document.getElementById("iframe").style.display="block"' style="background: #042073;"> 
+<body bgcolor="#333333" style="background: #042073;"> 
 
-	<!-- this iframe is above the Flash, but below the div --> 
-	<iframe 
-		src="javascript:false" 
-		style="position: absolute; top: 110px; left: 220px; display: none; width: 102px; height: 32px; z-index: 5;"
-		id="iframe" 
-		frameborder="0" 
-		scrolling="no"> 
-	</iframe> 
+
     
     <!-- Standardowy element embed lub object z plikiem .swf -->
     <embed src="ui.swf" menu="false" quality="high" bgcolor="#333333" width="100%" height="100%" name="ui" align="middle" allowScriptAccess="sameDomain">
