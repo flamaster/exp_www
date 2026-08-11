@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flamaster2.Studio</title>
-    
-    <!-- Dołączenie Ruffle z CDN -->
-    <script src="ruffle.js"></script>
-
     <style>
         /* Usunięcie marginesów przeglądarki i rozciągnięcie na pełny ekran */
         html, body {
@@ -32,6 +28,26 @@
             display: block;
         }
     </style>
+    <!-- Dołączenie Ruffle z CDN -->
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            // Wymusza automatyczny start (brak przycisku Play)
+            "autoplay": "on",
+            
+            // Ukrywa ekran wczytywania i logo Ruffle
+            "splashScreen": false,
+            
+            // Ukrywa pozycje Ruffle w menu pod prawym przyciskiem myszy
+            "contextMenu": "off",
+            
+            // Opcjonalnie: wymuszenie tła
+            "backgroundColor": "#000000"
+        };
+    </script>
+    <script src="ruffle.js"></script>
+
+    
 </head>
 <body>
 
