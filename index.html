@@ -15,38 +15,24 @@
             background-color: #042073;
         }
 
-        ruffle-embed, ruffle-player {
+        ruffle-embed, ruffle-player, embed {
             display: block;
             width: 100%;
             height: 100%;
             background-color: #042073; 
           }
         
-        embed, object {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
     </style>
     <!-- Dołączenie Ruffle z CDN -->
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
         window.RufflePlayer.config = {
-            // Wymusza automatyczny start (brak przycisku Play)
             "autoplay": "on",
-            
-            // Ukrywa ekran wczytywania i logo Ruffle
             "splashScreen": false,
-            
-            // Ukrywa pozycje Ruffle w menu pod prawym przyciskiem myszy
             "contextMenu": "off",
-
             "scale": "showAll",
-
             "letterbox": "on",
-            
-            // Opcjonalnie: wymuszenie tła
-            "backgroundColor": "#042073"
+            "backgroundColor": "#042073",
         };
     </script>
     <script src="ruffle.js"></script>
