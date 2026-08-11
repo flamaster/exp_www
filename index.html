@@ -17,8 +17,8 @@
 
         ruffle-embed, ruffle-player {
             display: block;
-            width: 800px;
-            height: 600px;
+            width: 100%;
+            height: 100%;
             background-color: #042073; 
           }
         
@@ -40,9 +40,13 @@
             
             // Ukrywa pozycje Ruffle w menu pod prawym przyciskiem myszy
             "contextMenu": "off",
+
+            "scale": "showAll",
+
+            "letterbox": "on"
             
             // Opcjonalnie: wymuszenie tła
-            "backgroundColor": "#000000"
+            "backgroundColor": "#042073"
         };
     </script>
     <script src="ruffle.js"></script>
@@ -51,8 +55,7 @@
 </head>
 <body>
 
-    <!-- Standardowy element embed z plikiem .swf -->
-    <embed src="ui.swf" menu="false" quality="high" bgcolor="#042073" width="100%" height="100%" name="ui" align="middle" allowScriptAccess="sameDomain">
-
+    <embed src="gra.swf" width="100%" height="100%">
+    
 </body>
 </html>
